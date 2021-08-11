@@ -3,11 +3,11 @@ exports.config = {
     directConnect: true,
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     specs: [
-      'features/*.feature'
+      './features/*.feature'
     ],
     cucumberOpts: {
       require: [
-        'steps/*.js'
+        './steps/*.js'
       ]
     }
   };
