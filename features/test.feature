@@ -12,6 +12,6 @@ Feature: gla-test
 
         Examples:
             | text         | expectedResult                                                            |
-            | "JavaScript" | "We found 48 job openings related to "JavaScript""                        |
+            | "JavaScript" | "WE FOUND 1 JOB OPENING RELATED TO "JAVASCRIPT""                          |
             | "123"        | "Sorry, your search returned no results. Please try another combination." |
 
