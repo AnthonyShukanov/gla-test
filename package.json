@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.4",
-    "protractor": "^7.0.0"
+    "protractor": "^7.0.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",

@@ -12,10 +12,15 @@ Given(/^we open "(.+)" page$/, async function (url) {
 });
 
 Given(/^disable the waiting for Angular$/, async function() {
+    
     await browser.waitForAngularEnabled(false);
 });
 
 When(/^type "(.+)" to Keyword field$/, async function(text) {
     await homePage.typeToKeywordField(text);
+});
+
+Then(/^click Find-button$/, async function() {
+    await homePage.clickFindButton();
 });
 

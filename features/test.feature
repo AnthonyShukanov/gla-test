@@ -1,15 +1,17 @@
 Feature: gla-test
 
     Background:
-        Given disable the waiting for Angular
-        Given we open "https://www.epam.com/careers" page
+        * disable the waiting for Angular
+        * we open "https://www.epam.com/careers" page
 
     Scenario Outline: positive & negative scenarios
-        When page should be "https://www.epam.com/careers"
-        When type <text> to Keyword field
+        * page should be "https://www.epam.com/careers"
+        * type <text> to Keyword field
+        * click Find-button
+        * text of searching result should be <expectedResult>
 
         Examples:
-            | text         |
-            | "JavaScript" |
-            | "123"        |
+            | text         | expectedResult                                                            |
+            | "JavaScript" | "We found 48 job openings related to "JavaScript""                        |
+            | "123"        | "Sorry, your search returned no results. Please try another combination." |
 
