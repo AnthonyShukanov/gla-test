@@ -1,0 +1,20 @@
+{
+  "name": "gla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor config.js",
+    "wd:update": "webdriver-manager update"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "protractor-cucumber-framework": "^8.2.3"
+  }
+}
