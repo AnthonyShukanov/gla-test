@@ -1,11 +1,10 @@
-const { Given, When, Then, setDefaultTimeout} = require("@cucumber/cucumber");
+const { Given, When, Then, setDefaultTimeout, After} = require("@cucumber/cucumber");
 const { element, browser } = require("protractor");
 const { ecHelper } = require("./helpers/ecHelper");
 const { ECOptions } = require("./helpers/ecHelper");
 const { homePage }= require('./po/pageMap');
 const ConfigConstants = require("./helpers/ConfigConstants");
 setDefaultTimeout(ConfigConstants.GLOBAL_TIMEOUT);
-
 
 Given(/^we open "(.+)" page$/, async function (url) {
     await browser.get(url);
