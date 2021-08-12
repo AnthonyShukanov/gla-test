@@ -23,3 +23,14 @@ Then(/^click Find-button$/, async function() {
     await homePage.clickFindButton();
 });
 
+When(/^choose location$/, async function(table) {
+    const regions = table.rows().flat();
+    await homePage.selectLocation(regions);
+});
+
+When(/^choose skills$/, async function(table) {
+    const skills = table.rows().flat();
+    await homePage.selectSkills(skills);
+});
+
+
